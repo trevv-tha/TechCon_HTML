@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TechCon 2024</title>
+  
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Contact Info -->
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Contact Information</h2>
+      <p>Email us at: <a href="mailto:info@techcon2024.com">info@techcon2024.com</a></p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <!-- Embedded Map -->
+    <section aria-labelledby="venue-map">
+      <h2 id="venue-map">Conference Venue</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9781159912896!2d-0.18696492515138563!3d5.5600148338273305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b00a3d5b0ef%3A0xdea6a7d35d5622d2!2sAccra%20International%20Conference%20Centre!5e0!3m2!1sen!2sgh!4v1727543040000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section aria-labelledby="contact-form">
+      <h2 id="contact-form">Get in Touch</h2>
+      <form action="submit_contact.php" method="post">
+        <!-- Name -->
+        
+        <section>
+          <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required>
+      
+        </section>
+                  
+
+        <!-- Email -->
+        <section>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </section>
+
+        <!-- Subject -->
+        <section>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </section>
+
+        <!-- Message -->
+        <section>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 TechCon 2024. All rights reserved. Copyright</p>
+        </footer>
